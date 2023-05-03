@@ -1,0 +1,20 @@
+{
+  "name": "autobee-minimal-error",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autobase": "github:holepunchto/autobase",
+    "graceful-goodbye": "^1.2.1",
+    "hyper-sdk": "^4.2.4",
+    "hyperdeebee": "github:Telios-org/hyperdeebee"
+  }
+}
