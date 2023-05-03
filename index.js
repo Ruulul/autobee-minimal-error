@@ -12,10 +12,12 @@ goodbye(_ => sdk.close())
 const IOCores = await sdk.namespace('example')
 const localInput = IOCores.get({ name: 'local-input' })
 const localOutput = IOCores.get({ name: 'local-output' })
+await Promise.all([localInput.ready(), localOutput.ready()])
 const autobase = new Autobase({ localInput, localOutput })
 const bee = new Autodeebee(autobase, { keyEncoding: 'binary', valueEncoding: 'binary' })
 
 const db = new DB(bee)
 
+const index = ['kind', 'created_at', 'pubkey', 'id']
 const events = db.collection('events')
-await events.createIndex(['kind', 'created_at', 'pubkey', 'id'])
+await events.createIndex(index)
