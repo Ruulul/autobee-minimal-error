@@ -5,7 +5,7 @@ import Autodeebee from 'hyperdeebee/autodeebee.js'
 import goodbye from 'graceful-goodbye'
 
 const sdk = await SDK.create({
-    storage: false,
+  storage: false
 })
 goodbye(_ => sdk.close())
 

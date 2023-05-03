@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "standard": "standard"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +17,8 @@
     "graceful-goodbye": "^1.2.1",
     "hyper-sdk": "^4.2.4",
     "hyperdeebee": "github:Telios-org/hyperdeebee"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
   }
 }
